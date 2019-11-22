@@ -1,0 +1,18 @@
+{
+  "name": "test-socket-react-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd socket-client && npm run start",
+    "server": "cd socket-server && npm run start",
+    "client-build": "cd client && npm run build",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "ghooks": "^2.0.4"
+  }
+}
